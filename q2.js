@@ -2,7 +2,7 @@ function arrayStringify(a) {
     /* นายณฐพร ไพรินทร์ 660610749 */
     var result = '';
     if (a == null || a.length == 0)
-        return result = '0';
+        return result = '';
     for (var i = 0; i < a.length; i++) {
         result += a[i];
     }

@@ -3,7 +3,7 @@ function arrayStringify(a :number[]):string{
 
 
   let result: string = '';
-  if (a == null || a.length == 0) return result = '0';
+  if (a == null || a.length == 0) return result = '';
   for (let i = 0; i < a.length; i++) {
     
     result += a[i];
