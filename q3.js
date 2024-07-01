@@ -1,16 +1,16 @@
 function primeNumber(a) {
     /* นายณฐพร ไพรินทร์ 660610749 */
-    var z = a;
-    if (z > 2) {
-        if (z % 2 == 0 || z % 3 == 0 || z % 5 == 0 || z % 7 == 0 ||
-            z % 11 == 0 || z % 19 == 0) {
+    if (a <= 1)
+        return "NO";
+    if (a === 2)
+        return "YES";
+    for (var i = 2; i < a - 1; i++) {
+        if (a % i === 0) {
             return "NO";
         }
         else
             return "YES";
     }
-    else
-        return "YES";
 }
 var d1 = 10;
 var d2 = 29;
